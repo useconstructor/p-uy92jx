@@ -1,19 +1,18 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "Built by Constructor",
+  title: 'Project 1788564008901',
+  description: 'Bloom & Stem is a refined boutique florist ecommerce website for browsing seasonal arrangements, purchasing same-day gifts, and subscribing to recurring flower deliveries. The experience emphasizes artisanal quality, local sourcing, sustainability, and effortless gifting.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es">
-      <body>{children}</body>
+    <html lang="en">
+      <body style={{ backgroundColor: '#FAF8F5', margin: 0 }}>
+        {children}
+      </body>
     </html>
   );
 }
